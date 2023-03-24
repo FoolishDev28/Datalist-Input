@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Auto complete input</title>
+</head>
+<style type="text/css">
+
+	body{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 90vh;
+	}
+	.box{
+		position: relative;
+		background: #1877f2;
+		box-shadow: 2px 0px 3px 0px black;
+		border: 2px;
+		width: 400px;
+		height: 300px;
+		border-radius: 10px;
+
+
+
+	}
+	input[type="list"]{
+		width: 200px;
+		height: 30px;
+		border: none;
+		border-radius: 10px;
+	}
+	label{
+		font-size: 20px;
+		color: black;
+	}
+	#box{
+		margin-top: 70px;
+		margin-left: 95px;
+
+	} h2{
+		text-align: center;
+		color: white;
+	}
+	label{
+		color: white;
+	}
+</style>
+<body>
+	<div class="box">
+		<h2>Auto Complete Input</h2>
+	<div id="box">
+	<label>Bikes</label>
+	<br>
+	<!-- <input list="Bikes" id="bike"> -->
+	<input  list="Bikes"  type="list" name="" id="bikes">
+	<datalist id="Bikes">
+		<option value="R15">
+		<option value="DUKE">
+		<option value="KTM">
+		<option value="YAMAHA RX100">	
+		<option value="YAMAHA FZ">
+			<option value="PULSAR 220">
+				<option value="BULLET">
+	</datalist>
+	</div>
+	</div>
+</body>
+</html>
